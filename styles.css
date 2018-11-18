@@ -120,7 +120,8 @@ body {
 }
 
 .project-icon:hover {
-    color: var(--font-color)
+    color: var(--font-color);
+    cursor: pointer;
 }
 
 .button-flex {
