@@ -17,9 +17,7 @@ body {
     margin-top: 50px;
     background-image: url("./images/projects-section-images/projects-background.png");
     background-size: cover;
-    background-position: center;
-    height: 100%;
-    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 .projects-title {
@@ -149,10 +147,21 @@ body {
     border: solid 2px #cecece;
     color: #cecece;
     outline: 0;
+    transition: all 0.2s ease-in-out;
 }
 
-.btn:hover {
-    border: solid 2px var(--font-color);
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.project {
+    opacity: 0;
+    animation: fadeIn 0.95s forwards;
 }
 
 .btn:focus {

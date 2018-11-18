@@ -20,9 +20,8 @@ const uiux = [
     "./../images/projects-section-images/img8.png",
 ]
 
-
-
 const allProjects = [...mobApps, ...identities, ...interiorDesign, ...uiux];
+
 
 
 const onClicked = (arr)=>{
@@ -41,12 +40,16 @@ const onClicked = (arr)=>{
     );
 }
 
+
+
 $('.btn1').click(()=> {
-    $(projectsContainer).html(onClicked(allProjects));
+     $(projectsContainer).html(onClicked(allProjects));
+
 });
 
 $('.btn2').click(() => {
     $(projectsContainer).html(onClicked(mobApps));
+   
 });
 
 $('.btn3').click(() => {
