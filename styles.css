@@ -6,8 +6,205 @@ body {
 
 :root {}
 
-@media only screen and (max-width: 400px) {}
+/* section footer */
 
-@media only screen and (min-width: 401px) and (max-width: 960px) {}
+.map{
+    background-image: url("images/map.png");
+    /* position: relative; */
+    /* height: 100%; */
+    background-repeat: repeat;
+    background-size: cover;
+    /* width: 100%; */
+    display: grid;
+    justify-items: center;
+    /* align-items: end; */
+    max-height: 317px;
+    /* min-height:  */
+    background-position: center;
+    /* align-content: start;	 */
+}
+.contact{  
+    grid-gap: 5%;
+    margin: 17%;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: rgb(77, 77, 77);
+    font-size: 30px;
+    width: 158px;
+    justify-items: center;
+    position: relative;
+    /* align-self: end; */
+}
+.contact div{
+    background-color: rgb(236, 236, 236);
+    border-radius: 10%;
+    border: 1px solid rgb(155, 155, 155);
+    width: 45px;
+    height: 45px;
+}
+.pin{
+    position: relative;
+}
+.pin span{
+    display: none;
+    padding: 2px 3px;
+    margin-left: 8px;
+    width: 130px;
+}
+.pin:hover span{
+    border: 1px solid #ccc;
+    display: inline;
+    position: absolute;
+    top: -70px;
+    left: -52px;
+    font-size: 12px;
+    color: rgb(83, 83, 83);
+    background-color: white;
+    text-align: center;
+}
+.telephone:hover, .envelope:hover, .pin:hover{
+    background-color:  rgb(112, 186, 255);
+}
+.info{
+    color: rgb(77, 77, 77);
+    width: 100%;
+    height: 160px;
+    background-color: #1F1F1F;
+    box-sizing: border-box;
+    padding-right: 13%;
+    padding-left: 13%;
+}
 
-@media only screen and (min-width: 961px) {}
+.footer-social{
+    padding-top: 4%;
+    box-sizing: border-box;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1px 30px 1px 30px 1px 30px 1px 30px 10px 1fr;
+}
+.footer-social a{
+    color: rgb(77, 77, 77);
+    text-align: center;
+    height: 30px;
+}
+.info .footer-social .form-inline{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 318px;
+}
+.form-inline input, .form-inline button{
+    border: 2px solid rgb(83, 83, 83);
+    background-color: #3B3B3B;
+    color: rgb(148, 148, 148);
+    font-size: 15px;
+    margin: 1px;
+}
+.footer-social .form-inline input{
+    width: 300px;
+}
+.footer-social .form-inline button:hover{
+    background-color: rgb(66, 164, 255);
+    border: 2px solid rgb(83, 83, 83);
+}
+.copyright{
+    font-size: 10px;
+    }
+.some-info{
+    text-align: end;
+}
+.dot {
+    height: 3px;
+    width: 3px;
+    background-color: rgb(77, 77, 77);
+    border-radius: 50%;
+    display: inline-block; 
+    }
+.vl {
+    border-left: 1px solid rgb(77, 77, 77);
+    height: 32px;
+}
+.policy{
+    display: grid;
+    font-size: 10px;
+}
+.policy a{
+    color: rgb(77, 77, 77);
+}
+
+
+@media only screen and (min-width: 961px) {
+    .footer-social{
+        grid-template-rows: 85px;
+    }
+    .form-inline{
+        justify-self: end;
+        align-self: start;
+    }
+    .policy{
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .info{
+        padding-right: 7%;
+        padding-left: 7%;
+    }
+    .footer-social{
+        grid-template-rows: 85px;
+        /* margin-left: 10px;
+        grid-template-columns: 1px 30px 1px 30px 1px 30px 1px 30px 1px;
+        justify-content: start;
+        grid-row-gap: 19px; */
+        
+    }
+    .footer-social a{
+        height: 0px;
+    }
+    .form-inline{
+        justify-self: end;
+        align-self: start;
+    }
+    .policy{
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 400px) { 
+    .info{
+        height: 230px;
+        padding-right: 0%;
+        padding-left: 0%;
+        padding-top: 4%;
+    }
+    .footer-social{
+        margin-left: 10px;
+        grid-template-columns: 1px 30px 1px 30px 1px 30px 1px 30px 1px;
+        justify-content: start;
+        grid-row-gap: 19px;
+    }
+    .info .footer-social .form-inline{
+        display: flex;
+        flex-flow: row wrap;
+        width: 260px;
+    }   
+    .policy{
+        margin: 8px;
+        grid-template-rows: 1fr 1fr;
+    }
+    .copyright{
+        text-align: center;
+        margin: 10px;
+    }
+    .some-info{
+        text-align: center;
+    }
+    .policy .copyright .some-info a{
+        text-align: center;
+    }
+}
+
+
+
+
