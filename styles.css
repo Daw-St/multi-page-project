@@ -1,0 +1,95 @@
+
+.meet-our-team{
+  max-width: 1300px;
+  margin: auto;
+  font-family: ﻿"OpenSans-Bold";
+  color: #6D6E71;
+}
+.meet-our-team h3{
+  font-size: 2.2em;
+  padding:0;
+  margin:.5em 0;
+}
+.meet-our-team .bald-man{
+  margin: 0 auto;
+  max-width: 650px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.meet-our-team article:nth-of-type(1){
+  flex: 2;
+  /*nie działa (tak jak powinno)
+  width: 121px;
+  height: 150px;
+  */
+}
+.meet-our-team article:nth-of-type(2){
+  flex: 3;
+}
+
+img[alt="Bald man"]{
+  border-bottom-left-radius: 100%65px;
+  border-bottom-right-radius: 100%65px;
+}
+.team-main{
+  margin-top: 75px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: white;
+  height:  394px;
+
+}
+.team-main  li:not(ol) {
+  width: 278px;
+
+  background: #F5F5F5;
+  border: solid 5px white;
+  border-radius: 3%;
+}
+
+.team-main  li img:not(ol){
+  display: flex;
+  margin: 40px auto 20px auto;
+  /*background: white 150px 150px;*/
+  border: white 5px solid;
+  border-radius: 50%
+
+}
+.team-main p{
+  text-align: center;
+}
+.team-main h4{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4em;
+  margin: 0;
+  padding: 0;
+}
+
+.team-main  ol{
+  align-self: flex-start;
+  border: 20px white solid;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  box-sizing: content-box;
+}
+.team-main ol li img{
+  width: auto;
+  margin: 0;
+  padding: 0;
+  /*background: white 150px 150px;*/
+  border: none;
+  border-radius: 0
+}
+
+.team-main ol li{
+  width: 22px;
+  flex-direction: row;
+  background: white;
+
+}
