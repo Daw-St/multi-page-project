@@ -460,8 +460,14 @@ img[alt="Bald man"]{
   flex-direction: row;
   flex-wrap: wrap;
   background: white;
-  height:  394px;
+  justify-content: center;
+  padding-left: 0px;
+}
 
+@media only screen and (min-width: 1169px){
+    .team-main{
+        height:  394px;
+    }
 }
 .team-main  li:not(ol) {
   width: 278px;
@@ -514,4 +520,12 @@ img[alt="Bald man"]{
   flex-direction: row;
   background: white;
 
+}
+
+.meet-our-team-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
 }
