@@ -1,23 +1,23 @@
 const projectsContainer = '.projects-container';
 
 const mobApps = [
-"./../images/projects-section-images/img1.png",
-"./../images/projects-section-images/img2.png",
-"./../images/projects-section-images/img3.png",
+"./images/projects-section-images/img1.png",
+"./images/projects-section-images/img2.png",
+"./images/projects-section-images/img3.png",
 ]
 
 const identities = [
-    "./../images/projects-section-images/img4.png",
+    "./images/projects-section-images/img4.png",
 ]
 
 const interiorDesign = [
-    "./../images/projects-section-images/img5.png",
+    "./images/projects-section-images/img5.png",
 ]
 
 const uiux = [
-    "./../images/projects-section-images/img6.png",
-    "./../images/projects-section-images/img7.png",
-    "./../images/projects-section-images/img8.png",
+    "./images/projects-section-images/img6.png",
+    "./images/projects-section-images/img7.png",
+    "./images/projects-section-images/img8.png",
 ]
 
 const allProjects = [...mobApps, ...identities, ...interiorDesign, ...uiux];
