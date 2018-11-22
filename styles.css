@@ -529,3 +529,244 @@ img[alt="Bald man"]{
     flex-wrap: wrap;
     height: auto;
 }
+
+.menu-top-bar{
+    background-color: #efefef;
+    padding: 0 100px;
+
+}
+
+.nav-bar{
+    display: flex;
+    background-color: #efefef;
+}
+
+.nav-bar-items{
+    display: flex;
+}
+
+.nav-bar-item{
+    padding: 11px;
+}
+.nav-bar-items-right{
+    margin-left: auto;
+}
+
+.nav-bar-items-right .nav-bar-item{
+    border-left: 1px solid #dee0e6;
+}
+
+.nav-bar-item-content{
+    display: flex;
+    max-height: 20px;
+    background-color: white;
+    box-sizing: content-box;
+    border-radius: 5%;
+    padding: 5px 15px;
+}
+
+.nav-bar-item-text{
+    margin-left: 10px;
+}
+
+.nav-main-bar{
+    display: flex;
+}
+
+.nav-bar-main-items{
+    display: flex;
+}
+
+.nav-bar-main-itmes-right{
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    padding-right: 70px; 
+}
+
+.nav-bar-main-itmes-right .nav-bar-main-item-first .nav-bar-main-item-content{
+    border-right: 1px solid #dee0e6;
+}
+
+.nav-bar-main-itmes-right .nav-bar-main-item-second .nav-bar-main-item-content{
+    border-right: 1px solid #dee0e6;
+}
+
+.nav-bar-main-itmes-right .nav-bar-main-item-content{
+    padding: 0px 20px;
+}
+
+.nav-main-bar{
+    padding: 0px 100px;
+    align-items: center;
+    height: 150px;
+}
+
+.nav-bar-main-item{
+    padding: 0 0 0 70px;
+}
+
+.nav-bar-item-text{
+    font-weight: 500;
+    color: #6d6e71;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  form.mobile-nav-form input[type=text] {
+    padding: 5px;
+    font-size: 17px;
+    border: 1px solid white;
+    float: left;
+    width: 85%;
+  }
+
+  form.mobile-nav-form button {
+    float: left;
+    width: 15%;
+    padding: 5px;
+    background: none;
+    color: white;
+    font-size: 17px;
+    border: 1px solid white;
+    border-left: none; 
+    cursor: pointer;
+  }
+  
+  form.mobile-nav-form button:hover {
+    background: none;
+  }
+  
+  form.mobile-nav-form::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .fa-search{
+      color: var(--gray);
+  }
+
+  .fa-search:hover{
+    color: var(--gray-dark);
+}
+
+.navigation-bar{
+    display: flex;
+}
+
+.navigation-items {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.navigation-item{
+    padding: 15px 10px;
+    border-right: 1px solid #efefef;
+    align-items: center;
+    align-content: center;
+}
+
+.navigation-item:last-child{
+    padding: 15px 10px;
+    border-right: none;
+    align-items: center;
+    align-content: center;
+}
+.navigation-items-right{
+    margin-left: auto;
+}
+
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    border-top: 1px solid #dee0e6;
+}
+ 
+@media only screen and (min-width: 1116px){
+    .navigation-bar{
+        height: 50px;
+    }
+}
+
+.navigation-items a{
+    color: #6d6e71;
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.navigation-items a:hover{
+    color: var(--primary);
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: 500;
+}
+
+.fa-bars{
+    color: var(--gray);
+    padding: 16px;
+}
+
+.fa-bars:active{
+    color: var(--gray-dark);
+}
+
+.navigation-link-toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 1115px){
+    
+    .menu-top-bar{
+    display: none;
+    }
+
+    .menu-main-bar{
+        display: none;
+    }
+
+    .navigation-items, .navigation-bar{
+        flex-direction: column;
+    }
+
+    .navigation-item{
+        border-right: none;
+    }
+
+    .navigation-items{
+        display: none;
+    }
+
+    .navigation-items-right{
+        display: none;
+    }
+
+    .navigation-link-toggle {
+        align-self: center;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .navigation-toggle-show{
+        display: flex;
+    }
+
+    .menu-nav-bar{
+        background-color: #efefef;
+    }
+
+    .navigation-bar{
+        padding: 0;
+    }
+
+    .navigation-items-toggle{
+        margin-top: 50px;
+    }
+}
