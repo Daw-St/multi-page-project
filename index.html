@@ -1,35 +1,342 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <title>Multi-page-project</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="styles.css"> 
+    <meta charset="utf-8">
+    <title>Multi-page-project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="./icons/font/flaticon.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/fontello.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-  <div class='page'>
-    <div class='section menu'>
-      <h1>test</h1>
-<!-- Konrad -->
+    <div class='page'>
+        <div class='section menu'>
+            <div class="menu-wrapper">
+                <div class="menu-top-bar">
+                    <div class="nav-bar">
+                        <nav class="nav-bar-items">
+                            <div class="nav-bar-item">
+                                <div class="nav-bar-item-content">
+                                <img src="./images/nav-blog-icon.png" alt="nav-blog-icon"/>
+                                <div class="nav-bar-item-text">
+                                    <p>Blog</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="nav-bar-item">
+                                <div class="nav-bar-item-content">
+                                <img src="./images/nav-jobs-icon.png" alt="nav-jobs-icon"/>
+                                <div class="nav-bar-item-text">
+                                    <p>Jobs</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="nav-bar-item">
+                                <div class="nav-bar-item-content">
+                                <img src="./images/nav-support-icon.png" alt="nav-support-icon"/>
+                                <div class="nav-bar-item-text">
+                                    <p>Support</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="nav-bar-item">
+                                <div class="nav-bar-item-content">
+                                <img src="./images/nav-lang-icon.png" alt="nav-lang-icon"/>
+                                <div class="nav-bar-item-text">
+                                    <p>English</p>
+                                </div>
+                                </div>
+                            </div>
+                        </nav>
+                        <nav class="nav-bar-items nav-bar-items-right">
+                            <div class="nav-bar-item">
+                                <img src="./images/nav-facebook-icon.png" alt="nav-facebook-icon"/>
+                            </div>
+                            <div class="nav-bar-item">
+                                <img src="./images/nav-twitter-icon.png" alt="nav-twitter-icon"/>
+                            </div>
+                            <div class="nav-bar-item">
+                                <img src="./images/nav-insta-icon.png" alt="nav-instagram-icon"/>
+                            </div>
+                            <div class="nav-bar-item">
+                                <img src="./images/nav-g-icon.png" alt="nav-google-plus-icon"/>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="menu-main-bar">
+                    <div class="nav-main-bar">
+                        <nav class="nav-bar-main-items">
+                            <div class="nav-bar-main-item">
+                                <div class="nav-bar-main-item-content">
+                                <img src="./images/nav-logo.png" alt="logo"/>
+                            </div>
+                        </nav>
+                        <nav class="nav-bar-main-items nav-bar-main-itmes-right">
+                            <div class="nav-bar-main-item-first">
+                                <div class="nav-bar-main-item-content">
+                                <img src="./images/nav-main-bar-tel-icon.png" alt="telephone-icon"/>
+                                </div>
+                            </div>
+                            <div class="nav-bar-main-item-second">
+                                    <div class="nav-bar-main-item-content">
+                                    <img src="./images/nav-main-bar-pin-icon.png" alt="pin-icon"/>
+                                    </div>
+                            </div>
+                            <div class="nav-bar-main-item-third">
+                                    <div class="nav-bar-main-item-content">
+                                    <img src="./images/nav-main-bar-message-icon.png" alt="message-icon"/>
+                                    </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="menu-nav-bar">
+                    <div class="navigation-bar">
+                        <div class="navigation-link navigation-link-toggle">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                        <nav class="navigation-items navigation-items-toggle">
+                            <div class="navigation-item">
+                                <a href="#">Home</a>
+                            </div>
+                            <div class="navigation-item">
+                                <a href="#">What about ISMA</a>
+                            </div>
+                            <div class="navigation-item">
+                                <a href="#">What we do?</a>
+                            </div>
+                            <div class="navigation-item">
+                                <a href="#projects">Our projects</a>
+                            </div>
+                            <div class="navigation-item">
+                                <a href="#team">Excelent Team</a>
+                            </div>
+                            <div class="navigation-item">
+                                <a href="#footer">Contact</a>
+                            </div>
+                        </nav>
+                        <nav class="navigation-items navigation-items-right">
+                            <div class="navigation-item">
+                                <div class="navigation-item-content">
+                                        <form class="mobile-nav-form">
+                                                <button type="reset"><i class="fa fa-search"></i></button>
+                                                <input type="text" placeholder="Type your search word" name="search">
+                                        </form>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='section lets-draw-some-arts'>
+            <!-- Joanna -->
+        </div>
+        <div class='section what-we-do'>
+            <!-- Kamila -->
+        </div>
+        <section class='section our-projects projects-section projects-background' id="projects">
+            <!-- Dominik -->
+            <div class="projects-wrapper">
+                <div class="projects-title">
+                    <img src="./images/projects-section-images/projects-title-icon.png" alt="laboratory-flask-icon">
+                    <div class="projects-text-container">
+                        <h2 class="projects-text-header">Our Projects</h2>
+                        <p class="projects-text">Some of our awesome work Proud of doing <br> great works for our clients</p>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <div class="button-flex">
+                        <button class="btn btn1">All</button>
+                        <button class="btn btn2">Mobile Apps</button>
+                        <button class="btn btn3">Identities</button>
+                        <button class="btn btn4">Interior Design</button>
+                        <button class="btn btn5">UI/UX</button>
+                    </div>
+                </div>
+                <div class="projects-container">
+                    <div class="project project1">
+                        <div class="project-img-wrapper">
+                            <img class="project-img" src="./images/projects-section-images/img1.png" alt="Photo of the project">
+                        </div>
+                        <div class="project-icon-container">
+                            <i class="project-icon link flaticon-unlink-1"></i>
+                            <i class="project-icon more flaticon-add-song"></i>
+                        </div>
+                    </div>
+                    <div class="project project2">
+                        <div class="project-img-wrapper">
+                            <img class="project-img" src="./images/projects-section-images/img2.png" alt="Photo of the project">
+                        </div>
+                        <div class="project-icon-container">
+                            <i class="project-icon link flaticon-unlink-1"></i>
+                            <i class="project-icon more flaticon-add-song"></i>
+                        </div>
+                    </div>
+                    <div class="project project3">
+                        <div class="project-img-wrapper">
+                            <img class="project-img" src="./images/projects-section-images/img3.png" alt="Photo of the project">
+                        </div>
+                        <div class="project-icon-container">
+                            <i class="project-icon link flaticon-unlink-1"></i>
+                            <i class="project-icon more flaticon-add-song"></i>
+                        </div>
+                    </div>
+                    <div class="project project4">
+                        <div class="project-img-wrapper">
+                            <img class="project-img" src="./images/projects-section-images/img4.png" alt="Photo of the project">
+                        </div>
+                        <div class="project-icon-container">
+                            <i class="project-icon link flaticon-unlink-1"></i>
+                            <i class="project-icon more flaticon-add-song"></i>
+                        </div>
+                    </div>
+                    <div class="project project5">
+                        <div class="project-img-wrapper">
+                            <img class="project-img" src="./images/projects-section-images/img5.png" alt="Photo of the project">
+                        </div>
+                        <div class="project-icon-container">
+                            <i class="project-icon link flaticon-unlink-1"></i>
+                            <i class="project-icon more flaticon-add-song"></i>
+                        </div>
+                    </div>
+                    <div class="project project6">
+                        <div class="project-img-wrapper">
+                            <img class="project-img" src="./images/projects-section-images/img6.png" alt="Photo of the project">
+                        </div>
+                        <div class="project-icon-container">
+                            <i class="project-icon link flaticon-unlink-1"></i>
+                            <i class="project-icon more flaticon-add-song"></i>
+                        </div>
+                    </div>
+                    <div class="project project7">
+                        <div class="project-img-wrapper">
+                            <img class="project-img" src="./images/projects-section-images/img7.png" alt="Photo of the project">
+                        </div>
+                        <div class="project-icon-container">
+                            <i class="project-icon link flaticon-unlink-1"></i>
+                            <i class="project-icon more flaticon-add-song"></i>
+                        </div>
+                    </div>
+                    <div class="project project8">
+                        <div class="project-img-wrapper">
+                            <img class="project-img" src="./images/projects-section-images/img8.png" alt="Photo of the project">
+                        </div>
+                        <div class="project-icon-container">
+                            <i class="project-icon link flaticon-unlink-1"></i>
+                            <i class="project-icon more flaticon-add-song"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <div class='section meet-our-team' id="team">
+        <div class="meet-our-team-wrapper">
+          <div class="bald-man">
+          <article class="bald-man-photo">
+
+              <img src="./images/meet_our_team_title_icon.png" alt="team-leader-icon">
+            </article>
+            <article>
+
+              <h3>Meet Our Team</h3>
+
+              <p>We have highly qualified staff with distinguished significant
+                experiences in their field who work under pressure.</p>
+              </article>
+
+
+          </div>
+          <ul class="team-main">
+              <li><img src="./images/member_tamer.png" alt="member-Tamer">
+                <h4>Tamer</h4>
+                  <p>Senior Software Engeneer</p>
+                  <ol class="team-social">
+                      <li><img src="./images/facebook_icon.png" alt="facebook-icon"></li>
+                      <li><img src="./images/instagram_icon.png" alt="instagram-icon"></li>
+                      <li><img src="./images/linkedin_icon.png" alt="linkedin-icon"></li>
+                      <li><img src="./images/twitter_icon.png" alt="twitter-icon"></li>
+                  </ol>
+              </li>
+
+              <li><img src="./images/member_hazem.png" alt="Hazem">
+                <h4>Hazem</h4>
+                  <p>PHP Develeloper</p>
+                  <ol>
+                    <li><img src="./images/facebook_icon.png" alt="facebook-icon"></li>
+                    <li><img src="./images/instagram_icon.png" alt="instagram-icon"></li>
+                    <li><img src="./images/linkedin_icon.png" alt="linkedin-icon"></li>
+                    <li><img src="./images/twitter_icon.png" alt="twitter-icon"></li>
+                  </ol>
+              </li>
+
+              <li><img src="./images/member_mohamed.png" alt="Mohhammed">
+                  <h4>Mohhammed</h4>
+                  <p>PHP Develeloper</p>
+                  <ol>
+                    <li><img src="./images/facebook_icon.png" alt="facebook-icon"></li>
+                    <li><img src="./images/instagram_icon.png" alt="instagram-icon"></li>
+                    <li><img src="./images/linkedin_icon.png" alt="linkedin-icon"></li>
+                    <li><img src="./images/twitter_icon.png" alt="twitter-icon"></li>
+                  </ol>
+              </li>
+
+              <li><img src="./images/member_ahmed.png" alt="Ahmed">
+                <h4>Ahmed</h4>
+                  <p>UI/UX Design</p>
+                  <ol>
+                    <li><img src="./images/facebook_icon.png" alt="facebook-icon"></li>
+                    <li><img src="./images/instagram_icon.png" alt="instagram-icon"></li>
+                    <li><img src="./images/linkedin_icon.png" alt="linkedin-icon"></li>
+                    <li><img src="./images/twitter_icon.png" alt="twitter-icon"></li>
+                  </ol>
+              </li>
+          </ul>
+        </div>
     </div>
-    <div class='section lets-draw-some-arts'>
-<!-- Joanna -->
-    </div>
-    <div class='section what-we-do'>
-<!-- Kamila -->
-    </div>
-    <div class='section our-projects'>
-<!-- Dominik -->
-    </div>
-    <div class='section meet-our-team'>
-<!-- Filip -->
-    </div>
-    <div class='section footer'>
-<!-- Agnieszka -->
+    <div class='section footer' id="footer">
+        <div class="map">
+            <div class="contact">
+                <div class="pin"><i class="demo-icon icon-pin"><span id="address"> 795 Almaddinah Way Saudi Arabia . Alreyadah </span></i></div>
+                <div class="envelope"><i class="demo-icon icon-mail"></i></div>
+                <div class="telephone"><i class="demo-icon icon-phone"></i></div>
+            </div>
+        </div>
+        <div class="info">
+                <div class="footer-social">
+                    <div class="vl"></div><a href="https://www.facebook.com/" target="_blank"><i class="demo-icon icon-facebook-official"></i></a>
+                    <div class="vl"></div>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="demo-icon icon-twitter"></i></a>
+                    <div class="vl"></div>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="demo-icon icon-instagram"></i></a>
+                    <div class="vl"></div>
+                    <a href="https://plus.google.com/" target="_blank"><i class="demo-icon icon-gplus"></i></a>
+                    <div class="vl"></div>
+                    <form class="form-inline">
+                        <input class="form-control" type="text" placeholder="Enter your email for our newsletter" />
+                        <button class="btn btn-primary">Join</button>
+                    </form>
+                </div>
+                <div class="policy">
+                    <p class="copyright">© Copyright 2014 - ISAMA for information technology</p>
+                    <div class="some-info">
+                        <a href="#">Blog <span class="dot"></span></a>
+                        <a href="#">Job <span class="dot"></span></a>
+                        <a href="#">Terms of Service <span class="dot"></span></a>
+                        <a href="#">Privacy <span class="dot"></span></a>
+                        <a href="#">Policy</a>
+                    </div>
+                </div>
+        </div>
     </div>
   </div>
-</body>
-
+  <script src="./js/projectsChanger.js"></script>
+  <script src="./js/toggle_runner.js"></script>
+</body> 
 </html>
