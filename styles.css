@@ -823,6 +823,16 @@ form.mobile-nav-form::after {
 .service6{
     grid-area: service6;
 }
+
+.service_top_divider{
+    grid-area: service_top_divider;
+}
+
+
+.service_top_divider img{
+    max-width: calc(100%);
+}
+
 .services{
     display: grid;
     grid-gap: 20px;
@@ -831,7 +841,7 @@ form.mobile-nav-form::after {
 
 .service_title_container{
     display: grid;
-    grid-template-areas: "service_title";
+    grid-template-areas: "service_top_divider" "service_title";
     justify-items: center;
     padding: 0 0 20px 0;
 }
