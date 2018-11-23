@@ -553,6 +553,13 @@ img[alt="Bald man"] {
     align-items: center;
     flex-wrap: wrap;
     height: auto;
+    padding: 0 0 100px 0;
+}
+
+@media only screen and (max-width: 400px){
+    .meet-our-team-wrapper {
+        padding: 0 0 50px 0;
+    }
 }
 
 .menu-top-bar {
@@ -786,3 +793,137 @@ form.mobile-nav-form::after {
         margin-top: 50px;
     }
 }
+
+/* SERVICES SECTION START */
+
+.service_title{
+    grid-area: service_title;
+}
+
+.service1{
+    grid-area: service1;
+}
+
+.service2{
+    grid-area: service2;
+}
+
+.service3{
+    grid-area: service3;
+}
+
+.service4{
+    grid-area: service4;
+}
+
+.service5{
+    grid-area: service5;
+}
+
+.service6{
+    grid-area: service6;
+}
+.services{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: "service1 service2" "service3 service4" "service5 service6";
+}
+
+.service_title_container{
+    display: grid;
+    grid-template-areas: "service_title";
+    justify-items: center;
+    padding: 0 0 20px 0;
+}
+
+.service{
+    display: grid;
+    background-color: var(--white);
+    padding: 30px;
+    grid-template-columns: 86px 1fr;
+    align-items: center;
+}
+
+.service_title{
+    display: grid;
+    background-color: var(--white);
+    padding: 30px;
+    grid-template-columns: 131px 1fr;
+    align-items: center;
+}
+
+.services-wrapper {
+    max-width: 1150px;
+    padding-bottom: 50px;
+    margin: 50px auto;
+}
+
+.what-we-do{
+    padding-top: 50px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.about_service{
+    padding-left: 25px;
+}
+
+.about_service_title{
+    padding-left: 25px;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .services {
+        grid-template-areas:
+        "service1"
+        "service2"
+        "service3"
+        "service4"
+        "service5"
+        "service6"
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .services {
+      grid-template-areas:
+        "service1"
+        "service2"
+        "service3"
+        "service4"
+        "service5"
+        "service6"
+    }
+
+    .service {
+        display: grid;
+        background-color: var(--white);
+        padding: 30px;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .service_title {
+        display: grid;
+        background-color: var(--white);
+        padding: 30px;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .about_service {
+        padding: 15px 0 0 0;
+    }
+
+    .about_service_title {
+        padding: 15px 0 0 0;
+    }
+
+    h3, p{
+        text-align: center;
+    }
+  }
+
+/* services section end */
